@@ -11,28 +11,25 @@
 		li {
 			font-size: 30px;
 		}
-		table.wikitable {
-			background-color: #f8f9fa;
-			border: 1px solid #a2a9b1;
-			border-collapse: collapse;
-			color: #000
-		}
-
-		table.wikitable > tr > th,table.wikitable > tr > td,table.wikitable > * > tr > th,table.wikitable > * > tr > td {
-			border: 1px solid #a2a9b1;
-			padding: 0.2em 0.4em
-		}
-
-		table.wikitable > tr > th,table.wikitable > * > tr > th {
-			background-color: #eaecf0;
-			text-align: center
-		}
-
-		table.wikitable > caption {
-			font-weight: bold
-		}
 		.slide table td:first-child, .slide table th:first-child {
 			padding-left: 0;
+		}
+
+		.slide:after {
+			display: none;
+		}
+		.slide {
+			padding-top: 80px;
+		}
+		#table {
+			margin-left: -75px;
+			margin-top: -60px;
+			width: calc(100% + 150px);
+		}
+		#table td {
+			vertical-align: middle;
+			padding-left: 10px;
+			padding-top: 10px;
 		}
 	</style>
 </head>
@@ -45,12 +42,21 @@
 
 	<section class="slide" id="cover">
 		<h2>JavaScript CodeRetreat</h2>
-		<p>Starting pack: <a href="http://bit.ly/js-cr">bit.ly/js-cr</a></p>
-		<p>(<a href="https://github.com/xoposhiy/js-code-retreat">https://github.com/xoposhiy/js-code-retreat</a>)
-		</p>
+		<div style="display: flex">
+			<div style="min-width: 250px; font-size: 40px">
+				<b>WiFi:</b><br>
+				Name: uraljs <br>
+				Pass: uraljs2017
+			</div>
+			<div style="padding-left: 120px; font-size: 40px">
+				<b>Starting pack: </b><br>
+				<a href="http://bit.ly/js-retreat">bit.ly/js-retreat</a>
+			</div>
+		</div>
+
 		<style>
 			#cover h2 {
-				margin:50px 0 70px;
+				margin: 0 0 90px;
 				text-align:center;
 				font-size:70px;
 				}
@@ -124,83 +130,53 @@
 	</section>
 
 	<section class="slide">
-		<img src="pictures/image2.png" alt="Life">
-	</section>
-
-	<section class="slide">
-		<table class="multicol" role="presentation" style="border-collapse: collapse; padding: 0; border: 0; background:transparent; width:auto; margin:auto;">
-			<tbody><tr>
-				<td style="text-align: left; vertical-align: top;">
-					<table class="wikitable">
-						<tbody><tr>
-							<th colspan="2">Still lifes</th>
-						</tr>
-						<tr>
-							<td>Block</td>
-							<td><img alt="Game of life block with border.svg" src="pictures/gameOfLife/Game_of_life_block_with_border.svg.png" width="66" height="66"></td>
-						</tr>
-						<tr>
-							<td>Beehive</td>
-							<td><img alt="Game of life beehive.svg" src="pictures/gameOfLife/98px-Game_of_life_beehive.svg.png" width="98" height="82"></td>
-						</tr>
-						<tr>
-							<td>Loaf</td>
-							<td><img alt="Game of life loaf.svg" src="pictures/gameOfLife/98px-Game_of_life_loaf.svg.png" width="98" height="98"></td>
-						</tr>
-						<tr>
-							<td>Boat</td>
-							<td><img alt="Game of life boat.svg" src="pictures/gameOfLife/82px-Game_of_life_boat.svg.png" width="82" height="82"></td>
-						</tr>
-						<tr>
-							<td>Tub</td>
-							<td><img alt="Game of life flower.svg" src="pictures/gameOfLife/Game_of_life_flower.svg.png" width="82" height="82"></td>
-						</tr>
-						</tbody></table>
-				</td>
-				<td style="text-align: left; vertical-align: top; padding-left: 1em;">
-					<table class="wikitable">
-						<tbody><tr>
-							<th colspan="2">Oscillators</th>
-						</tr>
-						<tr>
-							<td>Blinker (period 2)</td>
-							<td><img alt="Game of life blinker.gif" src="pictures/gameOfLife/Game_of_life_blinker.gif" width="82" height="82"></td>
-						</tr>
-						<tr>
-							<td>Toad (period 2)</td>
-							<td><img alt="Game of life toad.gif" src="pictures/gameOfLife/Game_of_life_toad.gif" width="98" height="98"></td>
-						</tr>
-						<tr>
-							<td>Beacon (period 2)</td>
-							<td><img alt="Game of life beacon.gif" src="pictures/gameOfLife/Game_of_life_beacon.gif" width="98" height="98"></td>
-						</tr>
-						<tr>
-							<td>Pulsar (period 3)</td>
-							<td><img alt="Game of life pulsar.gif" src="pictures/gameOfLife/Game_of_life_pulsar.gif" width="137" height="137"></td>
-						</tr>
-						<tr>
-							<td>Pentadecathlon (period 15)</td>
-							<td><img alt="I-Column.gif" src="pictures/gameOfLife/I-Column.gif" width="89" height="145"></td>
-						</tr>
-						</tbody></table>
-				</td>
-				<td style="text-align: left; vertical-align: top; padding-left: 1em;">
-					<table class="wikitable">
-						<tbody><tr>
-							<th colspan="2">Spaceships</th>
-						</tr>
-						<tr>
-							<td>Glider</td>
-							<td><img alt="Game of life animated glider.gif" src="pictures/gameOfLife/Game_of_life_animated_glider.gif" width="84" height="84"></td>
-						</tr>
-						<tr>
-							<td>Lightweight spaceship (LWSS)</td>
-							<td><img alt="Game of life animated LWSS.gif" src="pictures/gameOfLife/Game_of_life_animated_LWSS.gif" width="126" height="98"></td>
-						</tr>
-						</tbody></table>
-				</td>
-			</tr>
-			</tbody></table>
+		<table id="table">
+			<thead>
+				<tr>
+					<th colspan="2" style="width: 33%">Still lifes</th>
+					<th colspan="2" style="width: 33%">Oscillators</th>
+					<th colspan="2" style="width: 33%">Spaceships</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Block</td>
+					<td><img alt="Game of life block with border.svg" src="pictures/gameOfLife/Game_of_life_block_with_border.svg.png" width="66" height="66"></td>
+					<td>Blinker (period 2)</td>
+					<td><img alt="Game of life blinker.gif" src="pictures/gameOfLife/Game_of_life_blinker.gif" width="82" height="82"></td>
+					<td>Glider</td>
+					<td><img alt="Game of life animated glider.gif" src="pictures/gameOfLife/Game_of_life_animated_glider.gif" width="84" height="84"></td>
+				</tr>
+				<tr>
+					<td>Beehive</td>
+					<td><img alt="Game of life beehive.svg" src="pictures/gameOfLife/98px-Game_of_life_beehive.svg.png" width="98" height="82"></td>
+					<td>Toad (period 2)</td>
+					<td><img alt="Game of life toad.gif" src="pictures/gameOfLife/Game_of_life_toad.gif" width="98" height="98"></td>
+					<td>Lightweight spaceship (LWSS)</td>
+					<td><img alt="Game of life animated LWSS.gif" src="pictures/gameOfLife/Game_of_life_animated_LWSS.gif" width="126" height="98"></td>
+				</tr>
+				<tr>
+					<td>Loaf</td>
+					<td><img alt="Game of life loaf.svg" src="pictures/gameOfLife/98px-Game_of_life_loaf.svg.png" width="98" height="98"></td>
+					<td>Beacon (period 2)</td>
+					<td><img alt="Game of life beacon.gif" src="pictures/gameOfLife/Game_of_life_beacon.gif" width="98" height="98"></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Boat</td>
+					<td><img alt="Game of life boat.svg" src="pictures/gameOfLife/82px-Game_of_life_boat.svg.png" width="82" height="82"></td>
+					<td>Pulsar (period 3)</td>
+					<td><img alt="Game of life pulsar.gif" src="pictures/gameOfLife/Game_of_life_pulsar.gif" width="137" height="137"></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+		<div style="position: absolute; right: 10%; bottom: 7%;">
+			<img src="pictures/gameOfLife/82px-Game_of_life_fpento.svg.png" width="82" height="82">
+			<img src="pictures/gameOfLife/146px-Game_of_life_acorn.svg.png" width="146" height="82">
+		</div>
 	</section>
 
 	<section class="slide">
@@ -223,7 +199,7 @@
 		<ul>
 			<li>TDD</li>
 			<li>Пример теста есть у вас в стартовом репозитории</li>
-			<li>Использовать для сравнения можно только assert</li>
+			<li>Использовать для сравнения можно только assert.equal()</li>
 		</ul>
 		<div style="line-height: 1.4; position: absolute; right: 5%;">
 			< 2 соседей → смерть <br>
@@ -268,7 +244,6 @@
 		<ul>
 			<li>Нельзя редактировать строку</li>
 			<li>Через 10 итераций клетка умирает</li>
-			<li>[Написать бесконечные итерации с помощью генератора]</li>
 			<li>[Типизация]</li>
 			<li>[Запрещена { ]</li>
 		</ul>
