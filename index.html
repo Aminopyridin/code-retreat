@@ -93,20 +93,20 @@
 	</section>
 
 	<section class="slide">
-		<h2>Code Retreat</h2>
+		<h2>Условия</h2>
 		<ul>
-			<li>Задача: Игра «Жизнь»</li>
+			<li>Одина задача на все сессии</li>
 			<li class="next">Пять сессий по 45 минут</li>
 			<li class="next">В парах</li>
 			<li class="next">Каждую сессию пары меняются</li>
+			<li class="next">В конце сессии весь код удаляется</li>
 		</ul>
 	</section>
 
 	<section class="slide">
-		<h2>Code Retreat</h2>
+		<h2>Полезные советы</h2>
 		<ul>
-			<li>В конце сессии весь код удаляется</li>
-			<li class="next">Пишите тесты</li>
+			<li>Пишите тесты</li>
 			<li class="next">Учитесь новому через ограничения!</li>
 			<li class="next">Прочувствовать важнее, чем доделать</li>
 		</ul>
@@ -116,7 +116,7 @@
 		<h2>Игра «Жизнь»</h2>
 		<ul>
 			<li>Бесконечное двумерное клеточное поле</li>
-			<li class="next">Клетка м.б. жива (черная) или мертва (белая)</li>
+			<li class="next">Клетка бывает живой (черная) или мертвой (белая)</li>
 			<li class="next">Пошаговая игра
 				<ul>
 					<li>Менее двух живых соседей → смерть</li>
@@ -126,7 +126,7 @@
 				<p class="note">Соседи — это 8 клеток вокруг</p>
 			</li>
 		</ul>
-		<img src="pictures/image1.gif" alt="Life" style="position: absolute; right: 5%; top: 30%;">
+		<img src="pictures/image1.gif" alt="Life" style="position: absolute; right: 5%; bottom: 20%;">
 	</section>
 
 	<section class="slide">
@@ -192,6 +192,7 @@
 			= 3 соседа → жизнь<br>
 			= 2 соседа → состояние не меняется<br>
 		</div>
+		<img src="pictures/image10.png">
 	</section>
 
 	<section class="slide">
@@ -199,7 +200,7 @@
 		<ul>
 			<li>TDD</li>
 			<li>Пример теста есть у вас в стартовом репозитории</li>
-			<li>Использовать для сравнения можно только assert.equal()</li>
+			<li>Используйте для сравнения assert.equal()</li>
 		</ul>
 		<div style="line-height: 1.4; position: absolute; right: 5%;">
 			< 2 соседей → смерть <br>
@@ -207,6 +208,7 @@
 			= 3 соседа → жизнь<br>
 			= 2 соседа → состояние не меняется<br>
 		</div>
+		<img src="pictures/image10.png">
 	</section>
 
 	<section class="slide">
@@ -222,14 +224,15 @@
 			= 3 соседа → жизнь<br>
 			= 2 соседа → состояние не меняется<br>
 		</div>
+		<img src="pictures/image10.png">
 	</section>
 
 	<section class="slide">
 		<h2>Сессия 4</h2>
 		<ul>
 			<li>Нужно создать класс Life</li>
-			<li>Без циклов [и условий]</li>
-			<li>3 min timeframe</li>
+			<li>Через 10 итераций клетка умирает</li>
+			<li>Все методы не более 3 строк кода</li>
 		</ul>
 		<div style="line-height: 1.4; position: absolute; right: 5%;">
 			< 2 соседей → смерть <br>
@@ -237,15 +240,18 @@
 			= 3 соседа → жизнь<br>
 			= 2 соседа → состояние не меняется<br>
 		</div>
+		<img src="pictures/image10.png">
 	</section>
 
 	<section class="slide">
 		<h2>Сессия 5</h2>
 		<ul>
 			<li>Нельзя редактировать строку</li>
-			<li>Через 10 итераций клетка умирает</li>
-			<li>[Типизация]</li>
-			<li>[Запрещена { ]</li>
+			<p></p>
+			<li>[Без циклов]</li>
+			<li>[Без условий]</li>
+			<li>[Без переменных]</li>
+			<li>[Без мышки]</li>
 		</ul>
 		<div style="line-height: 1.4; position: absolute; right: 5%; bottom: 15%">
 			< 2 соседей → смерть <br>
@@ -253,6 +259,7 @@
 			= 3 соседа → жизнь<br>
 			= 2 соседа → состояние не меняется<br>
 		</div>
+		<img src="pictures/image10.png" style="position: absolute; right: 5%; top: 35%;">
 	</section>
 
 	<div class="progress"></div>
